@@ -7,24 +7,26 @@
 </head>
 <body>
     <%
-'Set rs = Server.CreateObject("ADODB.Recordset")
-'Set rs1 = Server.CreateObject("ADODB.Recordset")
+Set rs = Server.CreateObject("ADODB.Recordset")
+Set rs1 = Server.CreateObject("ADODB.Recordset")
 
 DC_PATH = Server.MapPath("test.xls") 
-        response.Write(DC_PATH)
+        response.Write(DC_PATH+"<br>")
         Set objConn = Server.CreateObject("ADODB.Connection")
 	'objConn.Open "Driver={Microsoft Excel Driver (*.xls)}; DriverId=790; DBQ=" & DC_PATH & request("filename") & ";"
-        objConn.Open "Driver={Microsoft Excel Driver (*.xls)}; DriverId=790; DBQ=" & DC_PATH & ";"
+        Constr="Driver={Microsoft Excel Driver (*.xls)}; DriverId=790; DBQ=" & DC_PATH & ";"
+        response.Write (Constr+"<br>")
+        objConn.Open Constr
         'rs.open "SELECT * FROM [Sheet1$A1:AD10]", objConn
-        rs.open "SELECT * FROM [Sheet1$A1:AD10]", objConn
+        rs.open "SELECT * FROM [Sheet1$]", objConn
+        i=1
         while not rs.eof
-		if DO_NOX = "" then
-			DO_NOX 	= rs.Fields(29).Value
-		else
-			DO_NOX 	= DO_NOX & ", " & rs.Fields(29).Value
-		end if
-		rs.movenext
+		response.Write("<p>"+cstr(i)+":"+rs(0)+"</p>")
+        i=i+1
+        rs.movenext
+        
 	wend
+        set objConn=nothing
         %>
 </body>
 </html>
