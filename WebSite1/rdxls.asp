@@ -6,7 +6,12 @@
 <link rel="stylesheet" type="text/css" title="Style" href="include/Main.css">
 </head>
 <body>
+    Today's date is: <%response.write(date())%>.
     <%
+        if request("Confirm") <> "" then
+                response.write "<p>Connfirm Yes</p>"
+
+        end if
 Set rs = Server.CreateObject("ADODB.Recordset")
 Set rs1 = Server.CreateObject("ADODB.Recordset")
 
@@ -14,7 +19,7 @@ DC_PATH = Server.MapPath("test.xls")
         'response.Write(DC_PATH+"<br>")
         %>
     <form action="rdxls.asp" method="post" name="form1">
-    <table align=center border=1 cellPadding=1 cellSpacing=0 width="700" bordercolor=#d3d3d3 bordercolordark=#dcdcdc bordercolorlight=#ffffff>
+        <input type="button" name="PREALERT" value="Upload Pre-Alert" class="resetb" style="width:150px;height:30px" onclick="OpenWin_Upload()"><table align=center border=1 cellPadding=1 cellSpacing=0 width="700" bordercolor=#d3d3d3 bordercolordark=#dcdcdc bordercolorlight=#ffffff>
 <tr class="title1" height="28" align="center">
 	<td WIDTH="5%">No.</td>
 	<td WIDTH="45%">P/O File Name</td>
@@ -55,8 +60,7 @@ DC_PATH = Server.MapPath("test.xls")
         %>
         </table>
     <%=rs(0) %>
-        <input type="button" name="PREALERT" value="Upload Pre-Alert" class="resetb" style="width:150px;height:30px" onclick="OpenWin_Upload()">
-        </form>
+        &nbsp;</form>
 </body>
 </html>
 <SCRIPT LANGUAGE=javascript>
@@ -69,6 +73,7 @@ DC_PATH = Server.MapPath("test.xls")
         varnewwin.focus();
     }*/
         if (confirm('Are you sure to finish this process?')) {
+            window.location = 'rdxls.asp?confirm=yes';
             return true;
         }
         return false;
