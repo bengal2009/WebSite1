@@ -13,7 +13,7 @@ Set rs1 = Server.CreateObject("ADODB.Recordset")
 DC_PATH = Server.MapPath("test.xls") 
         'response.Write(DC_PATH+"<br>")
         %>
-
+    <form action="rdxls.asp" method="post" name="form1">
     <table align=center border=1 cellPadding=1 cellSpacing=0 width="700" bordercolor=#d3d3d3 bordercolordark=#dcdcdc bordercolorlight=#ffffff>
 <tr class="title1" height="28" align="center">
 	<td WIDTH="5%">No.</td>
@@ -48,8 +48,29 @@ DC_PATH = Server.MapPath("test.xls")
         rs.movenext
         
 	wend
+            rs.Close
+              rs.open "SELECT count(1) FROM [Sheet1$]", objConn
+            
         set objConn=nothing
         %>
         </table>
+    <%=rs(0) %>
+        <input type="button" name="PREALERT" value="Upload Pre-Alert" class="resetb" style="width:150px;height:30px" onclick="OpenWin_Upload()">
+        </form>
 </body>
 </html>
+<SCRIPT LANGUAGE=javascript>
+    function OpenWin_Upload() {
+        /*if (form1.MBL_NOX.value=='' && form1.HBL_NOX.value=='') {
+            alert('Please choose the HAWB Number!');
+            return false;
+        }
+        varnewwin=window.open("UploadImg1.asp?MAWBX="+form1.MBL_NOX.value+"&HAWBX="+form1.HBL_NOX.value,"UploadImg","status=yes,width=600,height=400,top=10,left=10,scrollbars=yes")
+        varnewwin.focus();
+    }*/
+        if (confirm('Are you sure to finish this process?')) {
+            return true;
+        }
+        return false;
+    }
+    </script>
