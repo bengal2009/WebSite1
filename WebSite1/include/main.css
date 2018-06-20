@@ -1,0 +1,196 @@
+BODY
+{
+    SCROLLBAR-FACE-COLOR: #e6f5fa;
+    FONT-SIZE: 12px;
+    SCROLLBAR-HIGHLIGHT-COLOR: #2b77b5;
+    SCROLLBAR-SHADOW-COLOR: #2b77b5;
+    COLOR: #555555;
+    SCROLLBAR-3DLIGHT-COLOR: #e6f5fa;
+    SCROLLBAR-ARROW-COLOR: #2b77b5;
+    SCROLLBAR-TRACK-COLOR: #e6f5fa;
+    FONT-STYLE: normal;
+    FONT-FAMILY: "Verdana", "Arial";
+    SCROLLBAR-DARKSHADOW-COLOR: #e6f5fa
+}
+TD
+{
+    FONT-SIZE: 11px;
+    FONT-STYLE: normal;
+    FONT-FAMILY: "Verdana", "Arial"
+}
+INPUT
+{
+    FONT-SIZE: 11px;
+    COLOR: #555555;
+    FONT-STYLE: normal;
+    FONT-FAMILY: "Verdana", "Arial"
+}
+TEXTAREA
+{
+    FONT-SIZE: 11px;
+    COLOR: #555555;
+    FONT-STYLE: normal;
+    FONT-FAMILY: "Verdana", "Arial"
+}
+SELECT
+{
+    FONT-SIZE: 11px;
+    COLOR: black;
+    FONT-STYLE: normal;
+    FONT-FAMILY: "Verdana", "Arial"
+}
+A:link
+{
+    COLOR: #0000ff;
+    FONT-FAMILY: "Verdana", "Arial";
+    TEXT-DECORATION: none
+}
+A:visited
+{
+    COLOR: #999999;
+    FONT-FAMILY: "Verdana", "Arial";
+    TEXT-DECORATION: none
+}
+A:hover
+{
+    COLOR: #ff0000;
+    FONT-FAMILY: "Verdana", "Arial";
+    TEXT-DECORATION: underline
+}
+.form
+{
+    BORDER-RIGHT: #000000 1px solid;
+    BORDER-TOP: #000000 1px solid;
+    FONT-SIZE: 11px;
+    BORDER-LEFT: #000000 1px solid;
+    BORDER-BOTTOM: #000000 1px solid;
+    FONT-FAMILY: "Verdana", "Arial";
+    BACKGROUND-COLOR: #ffffff
+}
+.inputx
+{
+    BORDER-RIGHT: #555555 1px solid;
+    BORDER-TOP: #555555 1px solid;
+    FONT-SIZE: 11px;
+    BORDER-LEFT: #555555 1px solid;
+    COLOR: #333333;
+    BORDER-BOTTOM: #555555 1px solid;
+    FONT-STYLE: normal;
+    FONT-FAMILY: "Verdana", "Arial";
+    BACKGROUND-COLOR: #ffffff
+}
+.submitb
+{
+    BORDER-RIGHT: #555555 1px solid;
+    BORDER-TOP: #999999 1px solid;
+    FONT-SIZE: 11px;
+    BORDER-LEFT: #777777 1px solid;
+    BORDER-BOTTOM: #444444 1px solid;
+    FONT-FAMILY: "Verdana", "Arial";
+    BACKGROUND-COLOR: #ffffff
+}
+.resetb
+{
+    BORDER-RIGHT: #555555 1px solid;
+    BORDER-TOP: #999999 1px solid;
+    FONT-SIZE: 11px;
+    BORDER-LEFT: #777777 1px solid;
+    BORDER-BOTTOM: #444444 1px solid;
+    FONT-FAMILY: "Verdana", "Arial";
+    BACKGROUND-COLOR: #ffbb00
+}
+.greenb
+{
+    BORDER-RIGHT: #555555 1px solid;
+    BORDER-TOP: #999999 1px solid;
+    FONT-SIZE: 11px;
+    BORDER-LEFT: #777777 1px solid;
+    BORDER-BOTTOM: #444444 1px solid;
+    FONT-FAMILY: "Verdana", "Arial";
+    BACKGROUND-COLOR: #88ff55
+}
+.nowpage
+{
+    FONT-SIZE: 15px;
+    COLOR: #0000ff;
+    FONT-STYLE: normal;
+    FONT-FAMILY: "Verdana", "Arial";
+    BACKGROUND-COLOR: #ddddff
+}
+.title
+{
+    FONT-SIZE: 11px;
+    COLOR: #ffffff;
+    FONT-STYLE: normal;
+    FONT-FAMILY: "Verdana", "Arial";
+    BACKGROUND-COLOR: #6699ff
+}
+.title1
+{
+    FONT-SIZE: 11px;
+    COLOR: #ffffff;
+    FONT-STYLE: normal;
+    FONT-FAMILY: "Verdana", "Arial";
+    BACKGROUND-COLOR: #7799FF
+}
+.title1txt1
+{
+    FONT-SIZE: 11px;
+    FONT-STYLE: normal;
+    FONT-FAMILY: "Verdana", "Arial"
+}
+.title1txt2
+{
+    FONT-SIZE: 11px;
+    FONT-STYLE: normal;
+    FONT-FAMILY: "Verdana", "Arial";
+    BACKGROUND-COLOR: #cccccc
+}
+.title2
+{
+    FONT-SIZE: 11px;
+    COLOR: #ffffff;
+    FONT-STYLE: normal;
+    FONT-FAMILY: "Verdana", "Arial";
+    BACKGROUND-COLOR: #849fe4
+}
+.title2txt1
+{
+    FONT-SIZE: 11px;
+    COLOR: #555555;
+    FONT-STYLE: normal;
+    FONT-FAMILY: "Verdana", "Arial";
+    BACKGROUND-COLOR: #bbddff
+}
+.title2txt2
+{
+    FONT-SIZE: 11px;
+    COLOR: #555555;
+    FONT-STYLE: normal;
+    FONT-FAMILY: "Verdana", "Arial";
+    BACKGROUND-COLOR: #e8f5ff
+}
+.title3
+{
+    FONT-SIZE: 11px;
+    COLOR: #2b77b5;
+    FONT-STYLE: normal;
+    FONT-FAMILY: "Verdana", "Arial";
+    BACKGROUND-COLOR: #bbddff
+}
+.title4
+{
+    FONT-SIZE: 11px;
+    COLOR: #ffffff;
+    FONT-STYLE: normal;
+    FONT-FAMILY: "Verdana", "Arial";
+    BACKGROUND-COLOR: #bbbbbb
+}
+.title5
+{
+    FONT-SIZE: 11px;
+    COLOR: #ffffff;
+    FONT-STYLE: normal;
+    FONT-FAMILY: "Verdana", "Arial";
+    BACKGROUND-COLOR: #DD9977
+}
